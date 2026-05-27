@@ -1,0 +1,152 @@
+/* replaced the react template css with tailwindcss */
+@import "tailwindcss";
+
+@theme {
+  /* Main brand color */
+  --color-primary: var(--color-blue-900);
+  --color-primary-light: var(--color-blue-50);
+
+  /* Supporting text colors */
+  --color-secondary: var(--color-slate-500);
+  --color-secondary-light: var(--color-slate-400);
+
+  /* Neutrals */
+  --color-dark: var(--color-slate-900);
+  --color-neutral: var(--color-slate-100);
+  --color-light: var(--color-white);
+
+  /* Accent (buttons, highlights, badges) */
+  --color-accent: var(--color-amber-500);
+  --color-accent-light: var(--color-amber-100);
+
+  /* Fonts */
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-heading: "DM Serif Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Floating background animation */
+@keyframes floatCloud {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(140px, -130px) scale(1.08);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.cloud {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(15px);
+  opacity: 0.9;
+  animation: floatCloud 30s ease-in-out infinite;
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+/*-----------------------
+Contact
+-------------------------*/
+.contact-input {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--color-slate-200);
+  background: white;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-slate-900);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-input::placeholder {
+  color: var(--color-slate-400);
+}
+
+.contact-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgb(30 58 138 / 0.12);
+}
+
+.demo-button {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  padding: 0.9rem 1.8rem;
+  font-weight: 700;
+  color: var(--color-amber-50);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.demo-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgb(255 255 255 / 0.55),
+    transparent
+  );
+  transition: transform 0.6s ease;
+}
+
+.demo-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgb(245 158 11 / 0.35);
+}
+
+.demo-button:hover::before {
+  transform: translateX(120%);
+}
+/*-----------------------
+End Contact
+-------------------------*/
+
+/*-----------------------
+Lets talk button
+-------------------------*/
+.button-animation {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: var(--color-accent);
+  padding: 0.9rem 1.8rem;
+  font-weight: 700;
+  color: var(--color-amber-50);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.button-animation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-120%);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgb(255 255 255 / 0.55),
+    transparent
+  );
+  transition: transform 0.6s ease;
+}
+
+.button-animation:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgb(245 158 11 / 0.35);
+}
+
+.button-animation:hover::before {
+  transform: translateX(120%);
+}
