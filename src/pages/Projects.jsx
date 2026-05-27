@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import FeaturedWork from "../components/FeaturedWork";
 import Footer from "../components/Footer";
 
 function Projects() {
     return(
     <>
-        <Navbar />
+        <NavBar />
         <FeaturedWork />
         <Footer />
     </>

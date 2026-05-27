@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import ResumeSection from "../components/ResumeSection";
 import ResumeLinks from "../components/ResumeLinks";
 
 function Resume() {
   return (
     <>
-      <Navbar />
+      <NavBar />
 
       <main className="bg-slate-100 px-6">
         <div className="mx-auto flex max-w-6xl items-start justify-center gap-8">

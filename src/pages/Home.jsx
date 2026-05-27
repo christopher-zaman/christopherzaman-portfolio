@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
     <div className="min-h-screen bg-gradient-to-b from-white to-amber-50/50text-slate-900">
-      <Navbar />
+      <NavBar />
       <main>
       <Hero />
       <section id="about" className="scroll-mt-24 mx-auto max-w-6xl px-5 py-0">
