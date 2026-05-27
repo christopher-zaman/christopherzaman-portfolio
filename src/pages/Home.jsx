@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-    <div className="min-h-screen bg-gradient-to-b from-white to-amber-50/50text-slate-900">
+    <div className="min-h-screen pt-20 bg-gradient-to-b from-white to-amber-50/50text-slate-900">
       <NavBar />
       <main>
       <Hero />

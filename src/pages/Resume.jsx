@@ -7,7 +7,7 @@ function Resume() {
     <>
       <NavBar />
 
-      <main className="bg-slate-100 px-6">
+      <main className="bg-slate-100 px-6 pt-20">
         <div className="mx-auto flex max-w-6xl items-start justify-center gap-8">
         <ResumeSection />
         <ResumeLinks />

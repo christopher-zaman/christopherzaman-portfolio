@@ -1,4 +1,4 @@
-  
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="relative min-h-[45vh]overflow-hidden bg-white">
@@ -31,12 +31,21 @@ function Hero() {
             organizations streamline workflows, improve efficiency, and make better decisions.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/projects"
-              className="rounded-full bg-primary px-6 py-3 font-semibold text-white shadow-sm hover:bg-blue-800"
-            >
-              View Projects
-            </a>
+           <Link
+            to="/projects"
+            className="
+              rounded-full
+              bg-primary
+              px-6
+              py-3
+              font-semibold
+              text-white
+              shadow-sm
+              hover:bg-blue-800
+            "
+          >
+            View Projects
+          </Link>
             <a
               href="#contact"
               className="rounded-full border border-slate-300 px-6 py-3 font-semibold text-primary hover:border-primary"
