@@ -165,3 +165,45 @@ Lets talk button
 .button-animation:hover::before {
   transform: translateX(120%);
 }
+
+/*-----------------------
+Resume
+-------------------------*/
+.resume-scale-wrap {
+  width: 8.5in;
+  margin: 0 auto;
+  transform-origin: top center;
+}
+
+.resume-page {
+  width: 8.5in;
+  min-height: 11in;
+  background: white;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 20px 40px rgb(15 23 42 / 0.18);
+  border-radius: 2px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .resume-scale-wrap {
+    transform: scale(0.82);
+    margin-bottom: -2in;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .resume-scale-wrap {
+    transform: scale(0.46);
+    margin-bottom: -5.8in;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 390px) {
+  .resume-scale-wrap {
+    transform: scale(0.42);
+    margin-bottom: -6.3in;
+  }
+}

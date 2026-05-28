@@ -1,12 +1,8 @@
 function ResumeSection() {
   return (
-    <section id="resume" className="bg-slate-100 px-0 py-8">
-      <p className="mb-3 text-center text-xs text-slate-500 lg:hidden">
-        Swipe horizontally to view full resume.
-      </p>
-
-       <div className="w-screen overflow-x-auto px-4">
-        <div className="min-h-[11in] w-[8.5in] shrink-0 rounded-sm bg-white px-10 py-12 shadow-xl">
+    <section id="resume" className="bg-slate-100 px-4 py-8">
+  <div className="resume-scale-wrap">
+    <div className="resume-page">
           {/* Header */}
           <header className="grid grid-cols-3 items-start pb-8 text-sm">
             <div>
