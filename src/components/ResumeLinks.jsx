@@ -2,24 +2,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiDocumentText } from "react-icons/hi";
 import { SiLeetcode } from "react-icons/si";
 
-function ResumeLinks() {
+function ResumeLinks({ mobile = false }) {
+  const layoutClass = mobile
+    ? "mt-6 flex justify-center gap-4 rounded-2xl bg-white p-4 shadow-lg ring-1 ring-slate-200 lg:hidden"
+    : "sticky top-24 self-start hidden flex-col gap-3 rounded-2xl bg-white p-3 shadow-lg ring-1 ring-slate-200 lg:flex";
+
   return (
-    <aside className="
-sticky
-top-0
-m-5
-self-start
-hidden
-flex-col
-gap-3
-rounded-2xl
-bg-white
-p-3
-shadow-lg
-ring-1
-ring-slate-200
-lg:flex
-">
+    <aside className={layoutClass}>
       <a
         href="https://github.com/christopher-zaman"
         target="_blank"
@@ -44,6 +33,7 @@ lg:flex
         href="https://leetcode.com/u/christopher-zaman/"
         target="_blank"
         rel="noreferrer"
+        aria-label="LeetCode"
         className="text-accent transition hover:text-primary"
       >
         <SiLeetcode size={32} />
